@@ -1,0 +1,50 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>form pendaftaran</h2>
+    <form action="proses.php" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>pendaftaran siswa</legend>
+
+            <label for="nama lengkap">nama lengkap:</label>
+            <input type="text" id="nama lengkap" placeholder="masukkan nama lengkap" required><br><br>
+
+            <label for="nis">NIS:</label>
+            <input type="number" id="nis" placeholder="masukkan nis" required><br><br>
+
+            <label>jenis kelamin</label>
+            <input type="radio" id="jk_l" name="gender" value="laki-laki" required>
+            <label for="jk_l">laki-laki</label>
+            <input type="radio" id="jk_l" name="gender" value="perempuan">
+            <label for="jk_l">perempuan</label><br><br>
+
+            <label for="tanggal lahir">tanggal lahir:</label>
+            <input type="date" required><br><br>
+
+            <select name="jurusan" id="jurusan">jurusan:
+            <option value="">-- pilih jurusan --</option>
+            <option value="RPL">rekayasa perangkat lunak</option>
+            <option value="TKJ">teknik komputer & jaringan</option>
+            <option value="TSM">teknik sepeda motor</option>
+            </select><br><br>
+            
+            <label for="alamat">alamat:</label><br>
+            <textarea name="alamat" id="alamat" cols="30" rows="5" placeholder="masukkan alamat"></textarea><br><br>
+
+            <label for="foto">foto:</label>
+            <input type="file"><br><br>
+
+            <input type="checkbox" id="setuju" required>
+            <label for="setuju">saya menyetujui data yang saya masukkan</label><br><br>
+
+            <button type="submit"><a href="Table.html">daftar</a></button><button type="reset">reset</button>
+        </fieldset>
+    </form>
+
+</body>
+</html>
